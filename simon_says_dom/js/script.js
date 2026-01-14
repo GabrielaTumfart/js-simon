@@ -41,7 +41,7 @@ const timer = setInterval(function (){
 
     if (tempoRimanente <= 0) {
         clearInterval(timer);
-        numbersListElement.classList.add(d-done);
+        numbersListElement.classList.add(d-one);
         instruzioni.classList.add("d-none");
         formRisposte.classList.remove("d-none");
         console.log("Finito il timer! Mostro il form.");
@@ -49,6 +49,20 @@ const timer = setInterval(function (){
     }
 }, 1000);
 
+const form = document.getElementById("domande form");
+
+form.addEventListener("click", fuction () {
+
+    const inputs = document.querySelectorAll("input");
+    const numeriUtente = [];
+
+    for (let i =0; i <inputs.length; i++); {
+        numeriUtente.push
+    }
 
 
+}
+
+
+)
 
