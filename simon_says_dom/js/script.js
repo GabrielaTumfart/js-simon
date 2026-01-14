@@ -41,7 +41,7 @@ const timer = setInterval(function (){
 
     if (tempoRimanente <= 0) {
         clearInterval(timer);
-        listaNumeri.classList.add(d-none);
+        listaNumeri.classList.add("d-none");
 
         const instruzioni = document.getElementById("instructions");
         const formRisposte = document.getElementById("answers-form"); 
@@ -63,7 +63,7 @@ form.addEventListener("submit", function (evento) {
         numeriUtente.push(valore);
     }
     console.log("Numeri inseriti", numeriUtente);
-});
+
 
 const numeriIndovinati = [];
 
@@ -83,7 +83,8 @@ if(quanti === 0) {
     messaggio.innerText = "Non hai indovinato nessun numero.";
         
     } else {
-        messaggio.innerText = "Hai indovinato  ${quanti} numeri: ${numeriIndovinati.join","")}";
+        messaggio.innerText = `Hai indovinato  ${quanti} numeri: ${numeriIndovinati.join(",")}`;
         
     }
 
+});
