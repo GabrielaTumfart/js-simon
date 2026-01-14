@@ -56,13 +56,16 @@ form.addEventListener("click", fuction () {
     const inputs = document.querySelectorAll("input");
     const numeriUtente = [];
 
-    for (let i =0; i <inputs.length; i++); {
-        numeriUtente.push
+    for (let i =0; i <inputs.length; i++)[] {
+        numeriUtente.push(inputs[].value);
     }
 
 
 }
 
+console.log("Numeri inseriti", numeriUtente);
 
-)
+
+
+);
 
