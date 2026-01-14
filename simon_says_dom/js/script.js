@@ -67,8 +67,8 @@ form.addEventListener("submit", function (evento) {
 
 const numeriIndovinati = [];
 
-for (let i = 0; < numeriUtente.length; i++) {
-    cosnt numeroCorrente = numeriUtente[i];
+for (let i = 0; i < numeriUtente.length; i++) {
+    const numeroCorrente = numeriUtente[i];
 
     if (randomNumbers.includes(numeroCorrente)) {
         numeriIndovinati.push(numeroCorrente);
