@@ -30,20 +30,25 @@ for (let i = 0; i < randomNumbers.length; i++) {
 
 let tempoRimanente= 30;
 
-cosnt elementoCountdown = document.getElementById("countdown");
+const elementoCountdown = document.getElementById("countdown");
 
 elementoCountdown.innerText = tempoRimanente;
 
-cosnt timer = setInterval(function (){
-    tempoRimanente -;
+const timer = setInterval(function (){
+    tempoRimanente--;
 
     elementoCountdown.innerText = tempoRimanente;
 
     if (tempoRimanente <= 0) {
         clearInterval(timer);
+        numbersListElement.classList.add(d-done);
+        instruzioni.classList.add("d-none");
+        formRisposte.classList.remove("d-none");
         console.log("Finito il timer!");
          
     }
-} 1000);
+}, 1000);
+
+
 
 
