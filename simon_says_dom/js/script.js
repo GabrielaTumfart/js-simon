@@ -73,6 +73,6 @@ for (let i = 0; < numeriUtente.length; i++) {
     if (randomNumbers.includes(numeroCorrente)) {
         numeriIndovinati.push(numeroCorrente);
     }
-
-
 }
+console.log("Numeri indovinati:", numeriIndovinati);
+
