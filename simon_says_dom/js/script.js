@@ -8,3 +8,15 @@ click di conferma
 mostrare quanti e quali numeri sono stati inserit
 
 */ 
+
+//creo un array
+
+const randomNumbers = [];
+
+for (let i=0; i < 5; i++) {
+    const numero = Math.random() + 50;
+    randomNumbers.push(numero);
+}
+
+console.log("Numeri generati": , randomNumbers);
+
