@@ -34,3 +34,16 @@ cosnt elementoCountdown = document.getElementById("countdown");
 
 elementoCountdown.innerText = tempoRimanente;
 
+cosnt timer = setInterval(function (){
+    tempoRimanente - ;
+
+    elementoCountdown.innerText = tempoRimanente;
+
+    if (tempoRimanente <= 0) {
+        clearInterval(timer);
+        console.log("Finito il timer!");
+         
+    }
+} 1000);
+
+
