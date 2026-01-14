@@ -76,3 +76,15 @@ for (let i = 0; i < numeriUtente.length; i++) {
 }
 console.log("Numeri indovinati:", numeriIndovinati);
 
+const messaggio =document.getElementById("message");
+const quanti = numeriIndovinati.length;
+
+if(quanti === 0) {
+    messaggio.innerText = "Non hai indovinato nessun numero.";
+        
+    } else {
+        messaggio.innerText = "Hai indovinato i numeri:" ${quanti};
+        
+    }
+}
+
