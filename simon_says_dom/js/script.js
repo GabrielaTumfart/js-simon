@@ -14,7 +14,7 @@ mostrare quanti e quali numeri sono stati inserit
 const randomNumbers = [];
 
 for (let i=0; i < 5; i++) {
-    const numero = Math.random() + 50;
+    const numero = Math.floor() + 50;
     randomNumbers.push(numero);
 }
 
