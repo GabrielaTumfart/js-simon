@@ -22,8 +22,10 @@ console.log("Numeri generati:", randomNumbers);
 
 const listaNumeri = document.getElementById("numbers-list");
 
-for (let = 0; i < randomNumbers.length; i++) {
-  = randomNumbers[i];
+for (let i = 0; i < randomNumbers.length; i++) {
+    const list = document.createElement("list");
+    list.innerText = randomNumbers[i];
+    listaNumeri.append(list);
 }
 
 
