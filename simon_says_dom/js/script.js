@@ -86,5 +86,5 @@ if(quanti === 0) {
         messaggio.innerText = "Hai indovinato i numeri:" ${quanti};
         
     }
-}
+
 
