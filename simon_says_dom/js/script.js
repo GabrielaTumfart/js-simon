@@ -23,7 +23,7 @@ console.log("Numeri generati:", randomNumbers);
 const listaNumeri = document.getElementById("numbers-list");
 
 for (let = 0; i < randomNumbers.length; i++) {
-    listaNumeri.innerHTML = randomNumbers[i];
+  = randomNumbers[i];
 }
 
 
