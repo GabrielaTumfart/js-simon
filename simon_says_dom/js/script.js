@@ -35,7 +35,7 @@ cosnt elementoCountdown = document.getElementById("countdown");
 elementoCountdown.innerText = tempoRimanente;
 
 cosnt timer = setInterval(function (){
-    tempoRimanente - ;
+    tempoRimanente -;
 
     elementoCountdown.innerText = tempoRimanente;
 
