@@ -28,4 +28,9 @@ for (let i = 0; i < randomNumbers.length; i++) {
     listaNumeri.append(list);
 }
 
+let tempoRimanente= 30;
+
+cosnt elementoCountdown = document.getElementById("countdown");
+
+elementoCountdown.innerText = tempoRimanente;
 
