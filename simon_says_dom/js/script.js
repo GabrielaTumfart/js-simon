@@ -18,5 +18,12 @@ for (let i=0; i < 5; i++) {
     randomNumbers.push(numero);
 }
 
-console.log("Numeri generati": , randomNumbers);
+console.log("Numeri generati:", randomNumbers);
+
+const listaNumeri = document.getElementById("numbers-list");
+
+for (let = 0; i < randomNumbers.length; i++) {
+    listaNumeri.innerHTML = randomNumbers[i];
+}
+
 
