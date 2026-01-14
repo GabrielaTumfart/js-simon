@@ -23,9 +23,9 @@ console.log("Numeri generati:", randomNumbers);
 const listaNumeri = document.getElementById("numbers-list");
 
 for (let i = 0; i < randomNumbers.length; i++) {
-    const list = document.createElement("list");
-    list.innerText = randomNumbers[i];
-    listaNumeri.append(list);
+    const li = document.createElement("li");
+    li.innerText = randomNumbers[i];
+    listaNumeri.append(li);
 }
 
 let tempoRimanente= 30;
@@ -41,31 +41,27 @@ const timer = setInterval(function (){
 
     if (tempoRimanente <= 0) {
         clearInterval(timer);
-        numbersListElement.classList.add(d-one);
-        instruzioni.classList.add("d-none");
-        formRisposte.classList.remove("d-none");
+        listaNumeri.classList.add(d-none);
+
+        const instruzioni = document.getElementById("instructions");
+        const formRisposte = document.getElementById("answers-form"); 
         console.log("Finito il timer! Mostro il form.");
          
     }
 }, 1000);
 
-const form = document.getElementById("domande form");
+const form = document.getElementById("answers-form"); 
 
-form.addEventListener("click", fuction () {
+form.addEventListener("submit", function (evento) {
+    evento.preventDefault();
 
-    const inputs = document.querySelectorAll("input");
+    const inputUtente = form.querySelectorAll("input");
     const numeriUtente = [];
 
-    for (let i =0; i <inputs.length; i++)[] {
-        numeriUtente.push(inputs[].value);
+    for (let i = 0; i < inputUtente.length; i++) {
+        const valore = parseInt(inputUtente[i].value);
+        numeriUtente.push(valore);
     }
-
-
-}
-
-console.log("Numeri inseriti", numeriUtente);
-
-
-
-);
+    console.log("Numeri inseriti", numeriUtente);
+});
 
