@@ -65,3 +65,14 @@ form.addEventListener("submit", function (evento) {
     console.log("Numeri inseriti", numeriUtente);
 });
 
+const numeriIndovinati = [];
+
+for (let i = 0; < numeriUtente.length; i++) {
+    cosnt numeroCorrente = numeriUtente[i];
+
+    if (randomNumbers.includes(numeroCorrente)) {
+        numeriIndovinati.push(numeroCorrente);
+    }
+
+
+}
