@@ -44,7 +44,7 @@ const timer = setInterval(function (){
         numbersListElement.classList.add(d-done);
         instruzioni.classList.add("d-none");
         formRisposte.classList.remove("d-none");
-        console.log("Finito il timer!");
+        console.log("Finito il timer! Mostro il form.");
          
     }
 }, 1000);
