@@ -83,8 +83,7 @@ if(quanti === 0) {
     messaggio.innerText = "Non hai indovinato nessun numero.";
         
     } else {
-        messaggio.innerText = "Hai indovinato i numeri:" ${quanti};
+        messaggio.innerText = "Hai indovinato  ${quanti} numeri: ${numeriIndovinati.join","")}";
         
     }
-
 
